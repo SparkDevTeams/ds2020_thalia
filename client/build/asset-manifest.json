@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd4607c5.chunk.css",
+    "main.js": "/static/js/main.b480fee9.chunk.js",
+    "main.js.map": "/static/js/main.b480fee9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cea588d5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cea588d5.js.map",
+    "static/css/2.67123b20.chunk.css": "/static/css/2.67123b20.chunk.css",
+    "static/js/2.8d6739a0.chunk.js": "/static/js/2.8d6739a0.chunk.js",
+    "static/js/2.8d6739a0.chunk.js.map": "/static/js/2.8d6739a0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.947da3e3737fd490ac67ef4f66ff5991.js": "/precache-manifest.947da3e3737fd490ac67ef4f66ff5991.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.67123b20.chunk.css.map": "/static/css/2.67123b20.chunk.css.map",
+    "static/css/main.fd4607c5.chunk.css.map": "/static/css/main.fd4607c5.chunk.css.map",
+    "static/js/2.8d6739a0.chunk.js.LICENSE": "/static/js/2.8d6739a0.chunk.js.LICENSE",
+    "static/media/crystall_ball.png": "/static/media/crystall_ball.c9f3de04.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cea588d5.js",
+    "static/css/2.67123b20.chunk.css",
+    "static/js/2.8d6739a0.chunk.js",
+    "static/css/main.fd4607c5.chunk.css",
+    "static/js/main.b480fee9.chunk.js"
+  ]
+}
