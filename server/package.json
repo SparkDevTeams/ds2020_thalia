@@ -5,7 +5,13 @@
   "main": "server.js",
   "scripts": {
     "test": "NODE_ENV=test jest --testTimeout=10000 --detectOpenHandles",
-    "start": "NODE_ENV=development nodemon --exec babel-node server.js"
+    "start": "cross-env NODE_ENV=development nodemon --exec babel-node server.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "author": "",
   "license": "ISC",
