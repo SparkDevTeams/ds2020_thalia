@@ -20,5 +20,5 @@ afterEach(() => {
 test("renders learn react link", () => {
   render(<App />);
   const linkElement = document.getElementById("app-root");
-  expect(linkElement).toBeInTheDocument();
+  expect(queryByTestId(document.documentElement, 'html-element')).toBeInTheDocument();
 });
