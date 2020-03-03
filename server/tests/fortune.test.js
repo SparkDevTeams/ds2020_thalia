@@ -6,4 +6,4 @@ test('It should response the GET method', async () => {
     expect(response.statusCode).toBe(200);
 });
 
-© 2020 GitHub, Inc.
+

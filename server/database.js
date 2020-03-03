@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 import Fortune from "./schemas/fortune";
-import {db_url, db_user, db_pw} from "./env_setup";
+import {db_url} from "./env_setup";
 
-// Fix error encountered during npm test:
-// ReferenceError: regeneratorRuntime is not defined
+// Fix error encountered during npm test: 
+// ReferenceError: regeneratorRuntime is not defined 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
@@ -13,7 +13,7 @@ const connect_db = () => {
         return mongoose.connect(db_url);
     };
 
-    // Erase DB content and repopulate on synch if true
+    // Erase DB content and repopulate on synch if true  
     const eraseDBOnSynch = true;
     connectDb().then(async () => {
         if(eraseDBOnSynch){
@@ -24,8 +24,8 @@ const connect_db = () => {
         }
     })
 }
-
-
+    
+    
 // Helper function to populate DB
 const createMessages = async () => {
     console.log("Creating messages...");
@@ -48,11 +48,11 @@ const createMessages = async () => {
     for(msg in messages)
     {
         temp = new Fortune({message: messages[msg]});
-        await temp.save();
+        await temp.save(); 
     }
     console.log("Messages created!");
 };
-
+    
     // Helper function to get random document
 export const get_random = async () => {
     let count;

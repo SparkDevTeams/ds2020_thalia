@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 import CrystalBall from "./components/crystal_ball/CrystalBall";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="App" id="app-root">
       <CrystalBall />
-    </div >
+    </div>
   );
-}
+};
 
 export default App;

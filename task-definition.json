@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::336813533948:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::380963904006:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -36,7 +36,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "336813533948.dkr.ecr.us-east-2.amazonaws.com/ds2020_thalia/webapp",
+      "image": "380963904006.dkr.ecr.us-east-1.amazonaws.com/ds2020_mauricio/webapp",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -60,7 +60,7 @@
   "memory": "512",
   "taskRoleArn": null,
   "compatibilities": ["EC2", "FARGATE"],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:336813533948:task-definition/first-run-task-definition:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:380963904006:task-definition/first-run-task-definition:1",
   "family": "first-run-task-definition",
   "requiresAttributes": [
     {
