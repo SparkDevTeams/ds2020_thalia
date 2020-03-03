@@ -49,10 +49,10 @@ jobs:
   
     - name: npm install client
       run: npm install
-      working-directory: ${{ env.client-directory }}
+      working-directory: ./client
     - name: Build the client
       run: npm run-script build
-      working-directory: ${{ env.client-directory }}
+      working-directory: ./client
 
     - name: Login to Amazon ECR
       id: login-ecr
