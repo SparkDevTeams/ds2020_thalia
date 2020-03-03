@@ -46,13 +46,14 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
+  
     - name: npm install client
       run: npm install
-      working-directory: ./client
+      working-directory: ${{ env.client-directory }}
       
     - name: Build the client
       run: npm run-script build
-      working-directory: ./client
+      working-directory: ${{ env.client-directory }}
 
     - name: Login to Amazon ECR
       id: login-ecr
