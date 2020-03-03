@@ -24,7 +24,16 @@
       "command": [],
       "linuxParameters": null,
       "cpu": 0,
-      "environment": [],
+      "environment": [
+    {
+      "name": "DB_URL",
+      "value": "mongodb://localhost:27017/fortunate_prod_db"
+    },
+    {
+      "name": "PORT",
+      "value": "80"
+    }
+  ],
       "resourceRequirements": null,
       "ulimits": null,
       "dnsServers": null,
@@ -108,4 +117,17 @@
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
   "volumes": []
-}
+},
+  {
+    "name": "mongo",
+    "image": "mongo:latest",
+    "portMappings": [
+      {
+        "hostPort": 27017,
+        "containerPort": 27017
+      }
+    ],
+    "memory": "512",
+    "cpu": "256",
+    "essential": true
+  }
